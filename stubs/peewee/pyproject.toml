@@ -1,7 +1,7 @@
 [project]
 name = "types-peewee"
 version = "4.5.3.20261029"
-description = "Type stubs for peewee (patched build: query operators declared as methods)"
+description = "Type stubs for peewee and playhouse (patched build: query operators declared as methods)"
 requires-python = ">=3.9"
 
 [build-system]
@@ -9,5 +9,5 @@ requires = ["uv_build>=0.13.6,<0.14.0"]
 build-backend = "uv_build"
 
 [tool.uv.build-backend]
-module-name = "peewee-stubs"
+module-name = ["peewee-stubs", "playhouse-stubs"]
 module-root = "."
